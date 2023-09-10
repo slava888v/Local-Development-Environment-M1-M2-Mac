@@ -1,4 +1,4 @@
-# Setting up Python/Java/.NET Azure Functions development environment on Apple M2 (arm64)
+# Setting up Python/Java/.NET Azure Functions development environment on Apple M1/M2 (arm64)
 
 ## Summary
 At the time of writing, Azure Functions support local development for .NET and Java on arm64 devices but there is no support for Python yet (supposed to happen imminently).
