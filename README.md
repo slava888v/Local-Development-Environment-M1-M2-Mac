@@ -12,8 +12,8 @@ For x86_64, Homebrew will sit in /usr/local/bin/brew and the packes in /usr/loca
 Using this approach, we can install development packages for .NET and Java using arm64 version of Homebrew and for Python using the x86_64 version.
 
 
-### Asumptions
-* Hardware is Apple Silicon M1 or M2
+### My Environment
+* Apple Silicon M2
 * OS X Ventura 13.5.1
 * Visual Studio Code 1.8.2
 
@@ -231,7 +231,7 @@ export TNS_ADMIN=$ORACLE_BASE/admin/network
 sqlplus "user/pass@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=hostname.network)(Port=1521))(CONNECT_DATA=(SID=remote_SID)))"
 ```
 
-4. Start new python project, create venv and install cx_Oracle.
+4. Start new Python project, create venv and install cx_Oracle.
 ```console
 python3 -m venv .venv
 source .venv/bin/activate
