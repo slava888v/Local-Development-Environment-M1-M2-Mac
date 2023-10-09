@@ -238,3 +238,6 @@ source .venv/bin/activate
 pip install cx_Oracle
 ```
 
+## Spark development
+
+coming soon...
