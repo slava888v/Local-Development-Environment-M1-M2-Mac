@@ -45,8 +45,8 @@ arch
 /usr/local/bin/brew tap azure/functions
 /usr/local/bin/brew install azure-functions-core-tools@4
 ```
-**Note:** It appears that in some cases, azure-functions-core-tools library, is missing the `Arm64` directory inside `/opt/homebrew/Cellar/azure-functions-core-tools@4/YOUR_AZURE_FUNCTION_CORE_TOOLS_VERSION/workers/python/3.9/OSX/` folder. 
-This will cause the function to fail when you run your code with the following error: `File DefaultWorkerPath: /opt/homebrew/Cellar/azure-functions-core-tools@4/YOUR_AZURE_FUNCTION_CORE_TOOLS_VERSION/workers/python/3.9/OSX/Arm64/worker.py does not exist`. If that folder is missing, create a symlink:
+**Note:** It appears that in some cases, azure-functions-core-tools library, is missing the `Arm64` directory inside `/usr/local/Cellar/azure-functions-core-tools@4/YOUR_AZURE_FUNCTION_CORE_TOOLS_VERSION/workers/python/3.9/OSX/` folder. 
+This will cause the function to fail when you run your code with the following error: `File DefaultWorkerPath: /usr/local/Cellar/azure-functions-core-tools@4/YOUR_AZURE_FUNCTION_CORE_TOOLS_VERSION/workers/python/3.9/OSX/Arm64/worker.py does not exist`. If that folder is missing, create a symlink:
 ```console
 cd /opt/homebrew/Cellar/azure-functions-core-tools@4/4.3.0/workers/python/3.9/OSX/
 ln -s X64 Arm64
